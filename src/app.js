@@ -22,5 +22,6 @@ import userRouter from "./routes/user.routes.js";
 //routes declaration
 app.use("/api/users", userRouter);
 
-
+import exerciseRouter from "./routes/question.routes.js";
+app.use("/api/exercises", exerciseRouter);
 export { app };

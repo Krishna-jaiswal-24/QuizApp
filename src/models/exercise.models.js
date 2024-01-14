@@ -1,14 +1,29 @@
+// models/questionModel.js
 import mongoose from "mongoose";
 
-const exerciseSchema = new mongoose.Schema(
+const questionSchema = new mongoose.Schema(
   {
-    language: { type: String, required: true },
-    difficultyLevel: { type: Number, required: true }, // 1-5 scale
-    question: { type: String, required: true },
-    options: [{ type: String, required: true }],
-    correctAnswer: { type: String, required: true },
+    text: {
+      type: String,
+      required: true,
+    },
+    options: {
+      type: [String],
+      required: true,
+    },
+    correctAnswer: {
+      type: String,
+      required: true,
+    },
+    difficulty: {
+      type: Number,
+      required: true,
+      // You can set additional validation for difficulty if needed
+      min: 1,
+      max: 5,
+    },
   },
   { timestamps: true }
 );
 
-export const Exercise = mongoose.model("Exercise", exerciseSchema);
+export const Question = mongoose.model("Question", questionSchema);

@@ -1,4 +1,4 @@
-import mongoose,{Schema} from "mongoose";
+import mongoose, { Schema } from "mongoose";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import "dotenv/config";
@@ -24,6 +24,11 @@ const userSchema = new Schema(
       type: String,
       required: [true, "Password is required"],
       trim: true,
+    },
+    userRole: {
+      type: String,
+      enum: ["user", "admin"],
+      default: "user",
     },
     languagePreferences: [{ type: String }], // Array of preferred languages
     progress: [
