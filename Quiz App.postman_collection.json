@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "9850c9ef-5676-448d-b040-340250bbc344",
+		"name": "Quiz App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19888212"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"admin\",\n    \"email\":\"user@email.com\",\n    \"password\":\"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"admin\",\n    \"email\":\"user@email.com\",\n    \"password\":\"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"admin\",\n    \"email\":\"user@email.com\",\n    \"password\":\"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-question",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n  {\n    \"text\": \"What is the plural form of 'child'?\",\n    \"options\": [\"childs\", \"children\", \"childen\", \"child's\"],\n    \"correctAnswer\": \"children\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"Choose the correct spelling:\",\n    \"options\": [\"beleive\", \"believe\", \"beleve\", \"belive\"],\n    \"correctAnswer\": \"believe\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"Which word is a synonym for 'happy'?\",\n    \"options\": [\"sad\", \"joyful\", \"angry\", \"excited\"],\n    \"correctAnswer\": \"joyful\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"What is the opposite of 'dark'?\",\n    \"options\": [\"light\", \"black\", \"dim\", \"gloomy\"],\n    \"correctAnswer\": \"light\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"In the sentence 'She walks to school every day,' what is the verb?\",\n    \"options\": [\"She\", \"walks\", \"school\", \"every\"],\n    \"correctAnswer\": \"walks\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"Identify the correct sentence:\",\n    \"options\": [\n      \"The cat is laying on the couch.\",\n      \"The cat is lying on the couch.\",\n      \"The cat is lieing on the couch.\",\n      \"The cat is lyeing on the couch.\"\n    ],\n    \"correctAnswer\": \"The cat is lying on the couch.\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"What is the past tense of 'sing'?\",\n    \"options\": [\"sing\", \"sang\", \"sung\", \"singging\"],\n    \"correctAnswer\": \"sang\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"Which sentence is grammatically correct?\",\n    \"options\": [\n      \"Neither of the boys knows the answer.\",\n      \"Neither of the boys know the answer.\",\n      \"Neither of the boy knows the answer.\",\n      \"Neither of the boy know the answer.\"\n    ],\n    \"correctAnswer\": \"Neither of the boys knows the answer.\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"What is the meaning of 'vivid'?\",\n    \"options\": [\"dull\", \"bright\", \"gloomy\", \"foggy\"],\n    \"correctAnswer\": \"bright\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"Which word is an adverb?\",\n    \"options\": [\"quick\", \"jump\", \"happily\", \"book\"],\n    \"correctAnswer\": \"happily\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"What does the idiom 'break a leg' mean?\",\n    \"options\": [\n      \"Get injured\",\n      \"Have good luck\",\n      \"Dance gracefully\",\n      \"Exercise vigorously\"\n    ],\n    \"correctAnswer\": \"Have good luck\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"Choose the correct form of 'to be' in this sentence: 'They _____ happy.'\",\n    \"options\": [\"is\", \"am\", \"are\", \"be\"],\n    \"correctAnswer\": \"are\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"Which word is a preposition?\",\n    \"options\": [\"run\", \"over\", \"happy\", \"blue\"],\n    \"correctAnswer\": \"over\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"Identify the subject in the sentence: 'The sun sets in the west.'\",\n    \"options\": [\"sun\", \"sets\", \"west\", \"the\"],\n    \"correctAnswer\": \"sun\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"What is the plural form of 'mouse'?\",\n    \"options\": [\"mouses\", \"mice\", \"mouse\", \"mous\"],\n    \"correctAnswer\": \"mice\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"Choose the correct spelling:\",\n    \"options\": [\"definately\", \"definitely\", \"definetly\", \"defenitely\"],\n    \"correctAnswer\": \"definitely\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"Which word is an antonym for 'begin'?\",\n    \"options\": [\"start\", \"commence\", \"end\", \"initiate\"],\n    \"correctAnswer\": \"end\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"What is the opposite of 'fast'?\",\n    \"options\": [\"quick\", \"slow\", \"speedy\", \"swift\"],\n    \"correctAnswer\": \"slow\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"In the sentence 'He reads a book every night,' what is the object?\",\n    \"options\": [\"He\", \"reads\", \"book\", \"night\"],\n    \"correctAnswer\": \"book\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"Identify the correct sentence:\",\n    \"options\": [\n      \"Neither of the students has completed the assignment.\",\n      \"Neither of the student have completed the assignment.\",\n      \"Neither of the students have completed the assignment.\",\n      \"Neither of the student has completed the assignment.\"\n    ],\n    \"correctAnswer\": \"Neither of the students has completed the assignment.\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"What is the past participle of 'swim'?\",\n    \"options\": [\"swum\", \"swam\", \"swimming\", \"swime\"],\n    \"correctAnswer\": \"swum\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"Which sentence is grammatically correct?\",\n    \"options\": [\n      \"All of the flowers has bloomed.\",\n      \"All of the flowers have bloomed.\",\n      \"All of the flower has bloomed.\",\n      \"All of the flower have bloomed.\"\n    ],\n    \"correctAnswer\": \"All of the flowers have bloomed.\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"What is the meaning of 'exquisite'?\",\n    \"options\": [\"ordinary\", \"beautiful\", \"ugly\", \"average\"],\n    \"correctAnswer\": \"beautiful\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"Which word is an adjective?\",\n    \"options\": [\"run\", \"jump\", \"quick\", \"book\"],\n    \"correctAnswer\": \"quick\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"What does the idiom 'hit the hay' mean?\",\n    \"options\": [\n      \"Go to sleep\",\n      \"Start working\",\n      \"Eat dinner\",\n      \"Exercise vigorously\"\n    ],\n    \"correctAnswer\": \"Go to sleep\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"Choose the correct form of 'to be' in this sentence: 'She _____ happy.'\",\n    \"options\": [\"is\", \"am\", \"are\", \"be\"],\n    \"correctAnswer\": \"is\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"Which word is a conjunction?\",\n    \"options\": [\"run\", \"over\", \"happy\", \"and\"],\n    \"correctAnswer\": \"and\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"Identify the predicate in the sentence: 'The cat is sleeping on the mat.'\",\n    \"options\": [\"The\", \"cat\", \"is sleeping on the mat.\", \"on the mat\"],\n    \"correctAnswer\": \"is sleeping on the mat.\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"What is the plural form of 'goose'?\",\n    \"options\": [\"gooses\", \"goose\", \"geese\", \"goos\"],\n    \"correctAnswer\": \"geese\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"Choose the correct spelling:\",\n    \"options\": [\"accross\", \"across\", \"acros\", \"acrosst\"],\n    \"correctAnswer\": \"across\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"Which word is a synonym for 'sad'?\",\n    \"options\": [\"happy\", \"joyful\", \"melancholy\", \"excited\"],\n    \"correctAnswer\": \"melancholy\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"What is the opposite of 'quiet'?\",\n    \"options\": [\"silent\", \"noiseless\", \"loud\", \"calm\"],\n    \"correctAnswer\": \"loud\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"In the sentence 'They are playing soccer in the park,' what is the preposition?\",\n    \"options\": [\"They\", \"playing\", \"soccer\", \"in\"],\n    \"correctAnswer\": \"in\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"Identify the correct sentence:\",\n    \"options\": [\n      \"Each of the students has finished their homework.\",\n      \"Each of the students have finished their homework.\",\n      \"Each of the student has finished their homework.\",\n      \"Each of the student have finished their homework.\"\n    ],\n    \"correctAnswer\": \"Each of the students has finished their homework.\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"What is the past tense of 'run'?\",\n    \"options\": [\"running\", \"ran\", \"runned\", \"run\"],\n    \"correctAnswer\": \"ran\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"Which sentence is grammatically correct?\",\n    \"options\": [\n      \"Some of the furniture are damaged.\",\n      \"Some of the furniture is damaged.\",\n      \"Some of the furnitures are damaged.\",\n      \"Some of the furnitures is damaged.\"\n    ],\n    \"correctAnswer\": \"Some of the furniture is damaged.\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"What is the meaning of 'meticulous'?\",\n    \"options\": [\"careless\", \"sloppy\", \"thorough\", \"hasty\"],\n    \"correctAnswer\": \"thorough\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"Which word is a noun?\",\n    \"options\": [\"run\", \"jump\", \"happiness\", \"book\"],\n    \"correctAnswer\": \"happiness\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"What does the idiom 'burn the midnight oil' mean?\",\n    \"options\": [\n      \"Work late into the night\",\n      \"Take a nap during the day\",\n      \"Read a book at night\",\n      \"Go to bed early\"\n    ],\n    \"correctAnswer\": \"Work late into the night\",\n    \"difficulty\": 2\n  },\n  {\n    \"text\": \"Choose the correct form of 'to be' in this sentence: 'We _____ friends.'\",\n    \"options\": [\"is\", \"am\", \"are\", \"be\"],\n    \"correctAnswer\": \"are\",\n    \"difficulty\": 1\n  },\n  {\n    \"text\": \"Which word is a preposition?\",\n    \"options\": [\"run\", \"over\", \"happy\", \"blue\"],\n    \"correctAnswer\": \"over\",\n    \"difficulty\": 1\n  }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/exercises/add-question",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"exercises",
+						"add-question"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-questions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"text\": \"Updated question text\",\n  \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n  \"correctAnswer\": \"Option B\",\n  \"difficulty\": 2\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/exercises/get-all-questions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"exercises",
+						"get-all-questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-question",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"text\": \"Updated question text\",\n  \"options\": [\"Option A\", \"Option B\", \"Option C\", \"Option D\"],\n  \"correctAnswer\": \"Option B\",\n  \"difficulty\": 2\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/exercises/update-question/65a41b1f20548276afaa971d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"exercises",
+						"update-question",
+						"65a41b1f20548276afaa971d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-question",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/exercises/delete-question/65a421e309054e054984e6fb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"exercises",
+						"delete-question",
+						"65a421e309054e054984e6fb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
